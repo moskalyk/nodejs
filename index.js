@@ -530,7 +530,7 @@ const SocketProcessInferencePool = (base) => {
                     }));
                     socket.on('collect', (data) => __awaiter(void 0, void 0, void 0, function* () {
                         console.log('Received response:', data);
-                        const res = yield (0, axios_1.default)('http://127.0.0.1:5000');
+                        const res = yield (0, axios_1.default)('https://flask-production-2641.up.railway.app');
                         console.log(res.data);
                         const attributes = [];
                         const defend = Math.random() > 0.5 ? true : false;
